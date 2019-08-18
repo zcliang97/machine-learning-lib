@@ -125,6 +125,6 @@ __Objective Function__: _f(n) = h(n)_
 
 The following is a sample environment maze that is used to run the search algorithms on.
 
-![maze.png]("https://github.com/zcliang97/machine_learning_lib/blob/master/CommonSearch/images/maze.png")
+![maze.png](images/maze.png)
 
 The heuristic function chosen for informed searches is simply the Manhattan distance from the current node to the goal node.
