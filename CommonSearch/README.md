@@ -120,3 +120,11 @@ __Objective Function__: _f(n) = h(n)_
 
 * _Completeness_: No.
 * _Optimality_: No.
+
+## Sample Maze
+
+The following is a sample environment maze that is used to run the search algorithms on.
+
+<img src="https://github.com/zcliang97/machine_learning_lib/blob/master/CommonSearch/images/maze.png", width="50%"/>
+
+The heuristic function chosen for informed searches is simply the Manhattan distance from the current node to the goal node.
