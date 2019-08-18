@@ -31,7 +31,7 @@ To use the models, must create an environment file with the following parameters
 
 - __Epsilon-Greedy__: `default [0.1]`
 
-   The greedy parameter used when making a move. Will choose a greedy move `1-\(\epsilon\)` of the time and a random move `\(\epsilon\)` of the time.
+   The greedy parameter used when making a move. Will choose a greedy move `1-epsilon` of the time and a random move `epsilon` of the time.
 
 - __Learning rate (alpha)__: `default [0.2]`
 
