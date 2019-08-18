@@ -1,3 +1,8 @@
+"""
+A sample maze that have multiple points that can be configured to be starting/ending points.
+Can run through command line and will color in the expanded/queued nodes along with the final path found.
+"""
+
 from InformedSearch import InformedSearch
 from UninformedSearch import UninformedSearch
 from Node import Node

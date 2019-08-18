@@ -21,6 +21,7 @@ Expand the shallowest unexpanded nodes, storing the fringe to be expanded in a F
 * _Optimality_: Yes if the _cost = depth_.
 * _Time Complexity_: _O(b<sup>d+1</sup>)_
 * _Space Complexity_: _O(b<sup>d+1</sup>)_
+
    _where b is the branching factor and d is the depth_
 
 ### Depth First Search
@@ -31,6 +32,7 @@ Expand the deepest unexpanded nodes, storing the fringe to be expanded in a LIFO
 * _Optimality_: No.
 * _Time Complexity_: _O(b<sup>m</sup>)_
 * _Space Complexity_: _O(bm)_
+
    _where b is the branching factor and m is the maximum length of any path_
 
 ### Uniform Cost Search
@@ -42,6 +44,7 @@ Expand the lowest cost unexpanded node, storing the fringe to be expanded in a m
 * _Optimality_: Yes.
 * _Time Complexity_: _O(b<sup>d</sup>)_
 * _Space Complexity_: _O(b<sup>d</sup>)_
+
    _where b is the branching factor and d is the depth_
 
 ### Depth Limited Search
@@ -53,6 +56,7 @@ Execute DFS with a maximum search depth as a restriction.
 * _Optimality_: No
 * _Time Complexity_: O(b<sup>l</sup>)
 * _Space Complexity_: O(bl)
+
    _where b is the branching factor and l is the limit on the depth_
 
 ### Iterative Deepening Search
@@ -64,6 +68,55 @@ Iteratively, execute DLS with an increasing maximum search depth _l_ until a sol
 * _Optimality_: Yes if the _cost = depth_.
 * _Time Complexity_: _O(b<sup>d</sup>)_
 * _Space Complexity_: _O(bd)_
+
    _where b is the branching factor and d is the depth_
 
 ## Informed Seaches
+
+This is the class of searches where there is heuristic information about the environment. The give heuristic function `h(n)` is information that can be used to direct the search towards the goal. Having a better heuristic function will allow the search to find the goal faster.
+
+There are 3 kinds of heuristics:
+1. Perfect Heuristic: _h(n) = h<sup>*</sup>(n)_
+   * In this case, the heuristic function is a perfect estimate of where the goal is.
+2. Null Heuristic: _h(n) = 0_
+   * In this case, there is no extra information that the heuristic function could provide.
+3. Better Heuristic: _h1(n) < h2(n) < h<sup>*</sup>(n)_ 
+   * In this case, _h2(n)_ is a better heuristic than _h1(n)_.
+
+These heuristic functions are utilized in the following informed searches in some way. Each informed search uses a objective function _f(n)_ to decide which node to expand next in its path.
+
+### Best First Search/Greedy Algorithm
+
+Purely follows the heuristic function to determine which node to expand next.
+
+__Objective Function__: _f(n) = h(n)_
+
+* _Completeness_: No, can get stuck in loops.
+* _Optimality_: No.
+
+### A<sup>*</sup> Search
+
+Follows both the cost to get from the starting node to the current node _g(n)_ and the heuristic function.
+
+__Objective Function__: _f(n) = g(n) + h(n)_
+
+* _Completeness_: Yes if the branching factor _b_ is finite.
+* _Optimality_: Yes.
+
+### Beam Search
+
+Expands the best _B_ nodes at each level.
+
+__Objective Function__: _f(n) = h(n)_
+
+* _Completeness_: No.
+* _Optimality_: No.
+
+### Hill Climbing Search
+
+Expands the best node at each level.
+
+__Objective Function__: _f(n) = h(n)_
+
+* _Completeness_: No.
+* _Optimality_: No.
