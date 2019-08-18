@@ -29,7 +29,7 @@ A function that returns the next state given the current state and a decided act
 
 The number of episodes/epoches that the algorithm will run through.
 
-- __\(\epsilon\)-Greedy__: `default [0.1]`
+- __\( \epsilon \ E \)-Greedy__: `default [0.1]`
 
 The greedy parameter used when making a move. Will choose a greedy move `1-\(\epsilon\)` of the time and a random move `\(\epsilon\)` of the time.
 
