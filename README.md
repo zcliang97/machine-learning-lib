@@ -24,23 +24,31 @@ A collection of commonly used machine learning models and algorithms.
    * Expected SARSA
    * Double Q-Learning
 
-### 3. [Simulated Annealing](https://github.com/zcliang97/machine_learning_lib/tree/master/SimulatedAnnealing)
+### 3. [Genetic Algorithm (GA)](https://github.com/zcliang97/machine_learning_lib/tree/master/GeneticAlgorithm)
+   * Default GA Algorithm
+   * Crossover Variations
+   * Mutation Variations
+   * Master-Slave GAs
+   * Fine/Coarse-grained GAs
+   * Migration
+
+### 4. [Simulated Annealing](https://github.com/zcliang97/machine_learning_lib/tree/master/SimulatedAnnealing)
    * Annealing Schedule
    * Temperature Decrement Rule
 
-### 4. [Tabu Search](https://github.com/zcliang97/machine_learning_lib/tree/master/TabuSearch)
+### 5. [Tabu Search](https://github.com/zcliang97/machine_learning_lib/tree/master/TabuSearch)
    * Tabu List/Tabu Tenure
    * Aspiration Criteria
    * Recency/Frequency Optimization
 
-### 5. [Ant Colony Optimization (ACO)](https://github.com/zcliang97/machine_learning_lib/tree/master/ACO)
+### 6. [Ant Colony Optimization (ACO)](https://github.com/zcliang97/machine_learning_lib/tree/master/ACO)
    * Default ACO Algorithm
    * Ant System Algorithm(AS)
    * Ant Colony System Algorithm(ACS)
    * MinMax Ant System Algorithm (MMAS)
    * Other Adaptations
 
-### 6. [Particle Swarm Optimization (PSO)](https://github.com/zcliang97/machine_learning_lib/tree/master/PSO)
+### 7. [Particle Swarm Optimization (PSO)](https://github.com/zcliang97/machine_learning_lib/tree/master/PSO)
    * Default PSO Algorithm
    * Social/Cognitive Influences
    * Toplogies
@@ -49,14 +57,6 @@ A collection of commonly used machine learning models and algorithms.
    * Cooperative PSO
    * Hybrid Cooperative PSO
    * Tribes
-
-### 7. [Genetic Algorithm (GA)](https://github.com/zcliang97/machine_learning_lib/tree/master/GeneticAlgorithm)
-   * Default GA Algorithm
-   * Crossover Variations
-   * Mutation Variations
-   * Master-Slave GAs
-   * Fine/Coarse-grained GAs
-   * Migration
 
 ### 8. [Genetic Programming (GP)](https://github.com/zcliang97/machine_learning_lib/tree/master/GeneticProgramming)
    * TO BE UPDATED
