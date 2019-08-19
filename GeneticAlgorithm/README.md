@@ -24,19 +24,61 @@ There can be multiple kinds of problems that GA is used for and the crossover pr
 
 ### Crossover for Binary Solutions
 1. _1_-Point Crossover
+
 ![1-point](images/GA_crossover1.png)
+
 A random point is chosen on the two parents, and the two children are formed by exchanging the tails this point partitions.
 
 2. _N_-Point Crossover
+
 ![n-point](images/GA_crossover2.png)
+
 A generalization of 1-point crossovers where _N_ points are chosen on the two parents, and the two children are formed by combining alternating partitions between points.
 
 3. Uniform Crossover
-![unform](images/GA_crossover3.png)
+
+![uniform](images/GA_crossover3.png)
+
 Each gene has an independent 0.5 chance of undergoing recombination, which makes inheritance independent of position.
 This prevents transmitting co-adapted genes.
 
 ### Crossover for Real-Valued Solutions
 1. Single Arithmetic Crossover
+
 ![single](images/GA_crossover4.png)
+
 For a single parent gene pair _x_ and _y_, one child's gene becomes 𝛼𝑥+(1−𝛼)𝑦, and the reverse for the other child.
+
+2. Simple Arithmetic Crossover
+
+![simple](images/GA_crossover5.png)
+
+For each parent gene pair _x_ and _y_, after a certain gene pair _k_, one child's gene becomes 𝛼𝑥+(1−𝛼)𝑦, and the reverse for the other child.
+
+3. Whole Arithmetic Crossover
+
+![whole](images/GA_crossover6.png)
+
+For each parent gene pair _x_ and _y_, one child's gene becomes 𝛼𝑥+(1−𝛼)𝑦, and the reverse for the other child.
+
+## Crossover for Permutation Solutions
+_Permutation crossover algorithms are more difficult compared to binary and real-valued. For more explaination, look for online resources._
+
+1. Partially Mapped Crossover (PMX)
+
+![pmx](images/GA_crossover7.png)
+
+Copy a segment of the parent over to the child. For the other parent, replace all misplaced genes in the index of the other parent and repeat until a free space exists. Reverse for the other child.
+
+2. Order 1 Edge Crossover
+
+![order1](images/GA_crossover8.png)
+
+Copy a segment of the parent over to the child. Starting from the cut point of the copied part, copy the elements from the second parent in the order of the second parent until all elements are filled. Reverse for the other child.
+
+3. Cycle Edge Crossover
+
+![cycle](images/GA_crossover9.png)
+
+Identify all cycles in the two parents and alternate between the two parents in populating the children with the cycles.
+
