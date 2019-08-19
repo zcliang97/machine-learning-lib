@@ -41,14 +41,14 @@ A collection of commonly used machine learning models and algorithms.
    * Aspiration Criteria
    * Recency/Frequency Optimization
 
-### 6. [Ant Colony Optimization (ACO)](https://github.com/zcliang97/machine_learning_lib/tree/master/ACO)
+### 6. [Ant Colony Optimization (ACO)](https://github.com/zcliang97/machine_learning_lib/tree/master/AntColonyOptimization)
    * Default ACO Algorithm
    * Ant System Algorithm(AS)
    * Ant Colony System Algorithm(ACS)
    * MinMax Ant System Algorithm (MMAS)
    * Other Adaptations
 
-### 7. [Particle Swarm Optimization (PSO)](https://github.com/zcliang97/machine_learning_lib/tree/master/PSO)
+### 7. [Particle Swarm Optimization (PSO)](https://github.com/zcliang97/machine_learning_lib/tree/master/ParticleSwarmOptimization)
    * Default PSO Algorithm
    * Social/Cognitive Influences
    * Toplogies
